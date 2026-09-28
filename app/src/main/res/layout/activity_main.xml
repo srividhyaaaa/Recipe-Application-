@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8F2"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- ===================================== -->
+        <!-- HEADER                                -->
+        <!-- ===================================== -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recipe Book"
+            android:textColor="#7A3E18"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="sans"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discover delicious recipes"
+            android:textColor="#8A7568"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="25dp" />
+
+
+        <!-- ===================================== -->
+        <!-- SELECT RECIPE                         -->
+        <!-- ===================================== -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SELECT A RECIPE"
+            android:textColor="#7A3E18"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.08"
+            android:layout_marginBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/recipeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/spinner_background"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:spinnerMode="dropdown" />
+
+
+        <!-- ===================================== -->
+        <!-- RECIPE DISPLAY CARD                   -->
+        <!-- ===================================== -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/recipe_card_background"
+            android:layout_marginTop="22dp"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/recipeEmoji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🍽️"
+                android:textSize="65sp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/recipeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose a Recipe"
+                android:textColor="#5D2E0C"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/recipeCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select a recipe from the menu"
+                android:textColor="#9A6A45"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+
+
+        <!-- ===================================== -->
+        <!-- INGREDIENTS CARD                      -->
+        <!-- ===================================== -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/section_background"
+            android:padding="18dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🧂  Ingredients"
+                android:textColor="#5D2E0C"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/ingredientsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select a recipe to view its ingredients."
+                android:textColor="#555555"
+                android:textSize="15sp"
+                android:lineSpacingExtra="5dp" />
+
+        </LinearLayout>
+
+
+        <!-- ===================================== -->
+        <!-- PREPARATION CARD                      -->
+        <!-- ===================================== -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/section_background"
+            android:padding="18dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="👩‍🍳  Preparation"
+                android:textColor="#5D2E0C"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/stepsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select a recipe to view the preparation steps."
+                android:textColor="#555555"
+                android:textSize="15sp"
+                android:lineSpacingExtra="5dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
